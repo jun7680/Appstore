@@ -40,8 +40,12 @@ class SearchMainViewController: BaseViewController {
         view.backgroundColor = .white
         navigationItem.searchController = searchController
         
-        view.addSubview(recentTitleView)
-        view.addSubview(recentSearchTableView)
+        let views = [
+            recentTitleView,
+            recentSearchTableView
+        ]
+        
+        view.addSubviews(views)
     }
     
     override func initConstraints() {

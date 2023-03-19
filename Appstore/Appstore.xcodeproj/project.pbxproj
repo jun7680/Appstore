@@ -36,6 +36,7 @@
 		66A7AB6529C73B81001CA27B /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 66A7AB6429C73B81001CA27B /* RxSwift */; };
 		66A7AB6729C73BB5001CA27B /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 66A7AB6629C73BB5001CA27B /* RxBlocking */; };
 		66A7AB6929C73BC3001CA27B /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 66A7AB6829C73BC3001CA27B /* RxCocoa */; };
+		66A7AB6C29C73CF6001CA27B /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A7AB6B29C73CF6001CA27B /* UIViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		66A7AB5329C73980001CA27B /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
 		66A7AB5629C739C9001CA27B /* SearchParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchParameter.swift; sourceTree = "<group>"; };
 		66A7AB5B29C73AAE001CA27B /* SearchServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchServiceTest.swift; sourceTree = "<group>"; };
+		66A7AB6B29C73CF6001CA27B /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 				66A7AB4F29C738A3001CA27B /* Service */,
 				66A7AB3529C6FB2F001CA27B /* ViewModel */,
 				66A7AB3429C6FB1C001CA27B /* Presenter */,
+				66A7AB6A29C73CE5001CA27B /* Extensions */,
 				66A7AAF929C6F6EF001CA27B /* Main.storyboard */,
 				66A7AAFC29C6F6F5001CA27B /* Assets.xcassets */,
 				66A7AAFE29C6F6F5001CA27B /* LaunchScreen.storyboard */,
@@ -290,6 +293,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		66A7AB6A29C73CE5001CA27B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				66A7AB6B29C73CF6001CA27B /* UIViewExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -444,6 +455,7 @@
 				66A7AAF829C6F6EF001CA27B /* MainTabbarController.swift in Sources */,
 				66A7AB4C29C733F5001CA27B /* RecentHeaderView.swift in Sources */,
 				66A7AAF429C6F6EF001CA27B /* AppDelegate.swift in Sources */,
+				66A7AB6C29C73CF6001CA27B /* UIViewExtension.swift in Sources */,
 				66A7AB4829C7323A001CA27B /* RecentTermTableViewCell.swift in Sources */,
 				66A7AB4E29C7388D001CA27B /* SearchResultResponse.swift in Sources */,
 				66A7AB4A29C73247001CA27B /* BaseTableViewCell.swift in Sources */,
