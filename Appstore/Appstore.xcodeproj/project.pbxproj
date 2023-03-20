@@ -37,6 +37,10 @@
 		66A7AB6729C73BB5001CA27B /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 66A7AB6629C73BB5001CA27B /* RxBlocking */; };
 		66A7AB6929C73BC3001CA27B /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 66A7AB6829C73BC3001CA27B /* RxCocoa */; };
 		66A7AB6C29C73CF6001CA27B /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A7AB6B29C73CF6001CA27B /* UIViewExtension.swift */; };
+		66A7AB6E29C87E67001CA27B /* SearchMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A7AB6D29C87E67001CA27B /* SearchMainViewModel.swift */; };
+		66A7AB7329C88082001CA27B /* SearchListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A7AB7229C88082001CA27B /* SearchListTableViewCell.swift */; };
+		66A7AB7729C89097001CA27B /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A7AB7629C89097001CA27B /* ImageCache.swift */; };
+		66A7AB7929C89105001CA27B /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A7AB7829C89105001CA27B /* UIImageViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +88,10 @@
 		66A7AB5629C739C9001CA27B /* SearchParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchParameter.swift; sourceTree = "<group>"; };
 		66A7AB5B29C73AAE001CA27B /* SearchServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchServiceTest.swift; sourceTree = "<group>"; };
 		66A7AB6B29C73CF6001CA27B /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		66A7AB6D29C87E67001CA27B /* SearchMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMainViewModel.swift; sourceTree = "<group>"; };
+		66A7AB7229C88082001CA27B /* SearchListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListTableViewCell.swift; sourceTree = "<group>"; };
+		66A7AB7629C89097001CA27B /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		66A7AB7829C89105001CA27B /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +157,7 @@
 				66A7AB3529C6FB2F001CA27B /* ViewModel */,
 				66A7AB3429C6FB1C001CA27B /* Presenter */,
 				66A7AB6A29C73CE5001CA27B /* Extensions */,
+				66A7AB7529C8908B001CA27B /* Utils */,
 				66A7AAF929C6F6EF001CA27B /* Main.storyboard */,
 				66A7AAFC29C6F6F5001CA27B /* Assets.xcassets */,
 				66A7AAFE29C6F6F5001CA27B /* LaunchScreen.storyboard */,
@@ -216,6 +225,7 @@
 		66A7AB3529C6FB2F001CA27B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				66A7AB6D29C87E67001CA27B /* SearchMainViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -231,8 +241,7 @@
 		66A7AB3729C6FC3B001CA27B /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				66A7AB4629C73224001CA27B /* Cell */,
-				66A7AB3829C6FC5D001CA27B /* SearchMainViewController.swift */,
+				66A7AB6F29C87EBC001CA27B /* SearchMain */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -257,6 +266,7 @@
 		66A7AB4629C73224001CA27B /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				66A7AB7429C88085001CA27B /* SearchList */,
 				66A7AB4729C7323A001CA27B /* RecentTermTableViewCell.swift */,
 				66A7AB4B29C733F5001CA27B /* RecentHeaderView.swift */,
 			);
@@ -299,8 +309,34 @@
 			isa = PBXGroup;
 			children = (
 				66A7AB6B29C73CF6001CA27B /* UIViewExtension.swift */,
+				66A7AB7829C89105001CA27B /* UIImageViewExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		66A7AB6F29C87EBC001CA27B /* SearchMain */ = {
+			isa = PBXGroup;
+			children = (
+				66A7AB4629C73224001CA27B /* Cell */,
+				66A7AB3829C6FC5D001CA27B /* SearchMainViewController.swift */,
+			);
+			path = SearchMain;
+			sourceTree = "<group>";
+		};
+		66A7AB7429C88085001CA27B /* SearchList */ = {
+			isa = PBXGroup;
+			children = (
+				66A7AB7229C88082001CA27B /* SearchListTableViewCell.swift */,
+			);
+			path = SearchList;
+			sourceTree = "<group>";
+		};
+		66A7AB7529C8908B001CA27B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				66A7AB7629C89097001CA27B /* ImageCache.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -451,11 +487,15 @@
 			files = (
 				66A7AB3929C6FC5D001CA27B /* SearchMainViewController.swift in Sources */,
 				66A7AB5229C738BF001CA27B /* SearchAPI.swift in Sources */,
+				66A7AB6E29C87E67001CA27B /* SearchMainViewModel.swift in Sources */,
 				66A7AB5729C739C9001CA27B /* SearchParameter.swift in Sources */,
 				66A7AAF829C6F6EF001CA27B /* MainTabbarController.swift in Sources */,
+				66A7AB7329C88082001CA27B /* SearchListTableViewCell.swift in Sources */,
 				66A7AB4C29C733F5001CA27B /* RecentHeaderView.swift in Sources */,
 				66A7AAF429C6F6EF001CA27B /* AppDelegate.swift in Sources */,
 				66A7AB6C29C73CF6001CA27B /* UIViewExtension.swift in Sources */,
+				66A7AB7729C89097001CA27B /* ImageCache.swift in Sources */,
+				66A7AB7929C89105001CA27B /* UIImageViewExtension.swift in Sources */,
 				66A7AB4829C7323A001CA27B /* RecentTermTableViewCell.swift in Sources */,
 				66A7AB4E29C7388D001CA27B /* SearchResultResponse.swift in Sources */,
 				66A7AB4A29C73247001CA27B /* BaseTableViewCell.swift in Sources */,
