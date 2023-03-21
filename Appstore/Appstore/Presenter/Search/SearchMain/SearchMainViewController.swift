@@ -114,6 +114,15 @@ class SearchMainViewController: BaseViewController {
             .bind(with: self) { owner, model in
                 print(model.trackName)
             }.disposed(by: disposeBag)
+        
+        searchResultTableView.rx.willDisplayCell
+            .bind(with: self) { owner, cell in
+                let term = owner.searchController.searchBar.text ?? ""
+                owner.viewModel.inputs.fetchMoreList(
+                    term: term,
+                    row: cell.indexPath.row
+                )
+            }.disposed(by: disposeBag)
     }
 }
 
