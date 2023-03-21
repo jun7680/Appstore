@@ -11,6 +11,10 @@ class BaseTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
+        setupViews()
+        initConstraint()
+        subscribeUI()
     }
     
     @available(*, unavailable)
@@ -21,5 +25,4 @@ class BaseTableViewCell: UITableViewCell {
     func setupViews() {}
     func initConstraint() {}
     func subscribeUI() {}
-    func bind() {}
 }
