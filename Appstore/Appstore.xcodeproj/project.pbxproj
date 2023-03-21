@@ -68,7 +68,6 @@
 		66A7AAFA29C6F6EF001CA27B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		66A7AAFC29C6F6F5001CA27B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66A7AAFF29C6F6F5001CA27B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		66A7AB0129C6F6F5001CA27B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66A7AB0629C6F6F6001CA27B /* AppstoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppstoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66A7AB0A29C6F6F6001CA27B /* AppstoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppstoreTests.swift; sourceTree = "<group>"; };
 		66A7AB1029C6F6F6001CA27B /* AppstoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppstoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +91,7 @@
 		66A7AB7229C88082001CA27B /* SearchListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListTableViewCell.swift; sourceTree = "<group>"; };
 		66A7AB7629C89097001CA27B /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		66A7AB7829C89105001CA27B /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		66A7AB7C29C9C66E001CA27B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,7 +161,7 @@
 				66A7AAF929C6F6EF001CA27B /* Main.storyboard */,
 				66A7AAFC29C6F6F5001CA27B /* Assets.xcassets */,
 				66A7AAFE29C6F6F5001CA27B /* LaunchScreen.storyboard */,
-				66A7AB0129C6F6F5001CA27B /* Info.plist */,
+				66A7AB7C29C9C66E001CA27B /* Info.plist */,
 			);
 			path = Appstore;
 			sourceTree = "<group>";
